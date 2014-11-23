@@ -1,7 +1,5 @@
 apps=(
   airfoil
-  alfred
-  caffeine
   dropbox
   firefox
   flowdock
@@ -12,7 +10,6 @@ apps=(
   karabiner
   knock
   mailbox
-  moom
   nvalt
   screenhero
   spotify
@@ -21,6 +18,8 @@ apps=(
   transmission
 )
 
+echo "installing brew-cask..."
+brew install caskroom/cask/brew-cask
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 brew cask alfred link
